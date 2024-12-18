@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PVP Siddhartha Institute of Technology</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f8fafc;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4b79a1, #283e51);
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: 500;
+            padding: 8px 16px;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            color: #e0e0e0;
+        }
+
+        .section {
+            padding: 4rem 1rem;
+            background-color: #fff;
+            margin: 2rem 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+        }
+
+        .section:nth-child(even) {
+            background-color: #f4f7f9;
+        }
+
+        .section h2 {
+            text-align: center;
+            color: #283e51;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+        }
+
+        .departments {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .department-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            border: 1px solid #ddd;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .department-box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .department-box img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #f8fafc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .department-box h3 {
+            margin: 1rem 0 0;
+            font-size: 1.6rem;
+            color: #4b79a1;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 2rem auto;
+            padding: 0.7rem 1.5rem;
+            background: #4b79a1;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .button:hover {
+            background: #283e51;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            background: #283e51;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #d1d5db;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>PVP Siddhartha Institute of Technology</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#departments">Departments</a></li>
+                    <li><a href="#admissions">Admissions</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>PVP Siddhartha Institute of Technology (PVPSIT) is a prestigious institution known for its academic excellence and state-of-the-art facilities. Located in Vijayawada, Andhra Pradesh, it provides quality education in engineering and technology.</p>
+        </div>
+    </section>
+
+    <section id="departments" class="section">
+        <div class="container">
+            <h2>Departments</h2>
+            <div class="departments">
+                <div class="department-box">
+                    <img src="cse1.jpg" alt="Computer Science and Engineering">
+                    <h3>Computer Science and Engineering</h3>
+                </div>
+                <div class="department-box">
+                    <img src="ece.jpg" alt="Electronics and Communication Engineering">
+                    <h3>Electronics and Communication Engineering</h3>
+                </div>
+                <div class="department-box">
+                    <img src="me.jpeg" alt="Mechanical Engineering">
+                    <h3>Mechanical Engineering</h3>
+                </div>
+                <div class="department-box">
+                    <img src="ce.jpg" alt="Civil Engineering">
+                    <h3>Civil Engineering</h3>
+                </div>
+                <div class="department-box">
+                    <img src="eee.jpg" alt="Electrical and Electronics Engineering">
+                    <h3>Electrical and Electronics Engineering</h3>
+                </div>
+                <div class="department-box">
+                    <img src="it.jpg" alt="Information Technology">
+                    <h3>Information Technology</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="admissions" class="section">
+        <div class="container">
+            <h2>Admissions</h2>
+            <p>Explore your future at PVPSIT! Admissions are open for undergraduate and postgraduate programs. Visit our campus or contact our admissions office to know more.</p>
+            <a href="#contact" class="button">Get in Touch</a>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Address: Kanuru, Vijayawada, Andhra Pradesh, India</p>
+            <p>Phone: +91-866-1234567</p>
+            <p>Email: info@pvpsit.ac.in</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 PVP Siddhartha Institute of Technology. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
